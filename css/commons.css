@@ -1,0 +1,23 @@
+body {
+    background: rgb(21, 21, 20);
+    font-family: Alegreya Sans, sans-serif; }
+
+    .footer {
+        margin: 0 auto;
+        max-width: 26rem;
+        text-transform: uppercase;
+      }
+      .footer ul {
+        list-style-type: none;
+        border: solid 2px #7F7EA8;
+        box-shadow: -1px 1px #FFF, -3px 3px #7F7EA8;
+        padding: 1rem;
+      }
+      .footer li {
+        display: inline;
+        padding: 1rem;
+      }
+      .footer li a {
+        text-decoration: none;
+        color: #7F7EA8;
+      }
