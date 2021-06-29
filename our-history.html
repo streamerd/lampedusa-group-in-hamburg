@@ -5,12 +5,14 @@
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <link rel="stylesheet" href="./css/retro-navbar.css" />
     <link rel="stylesheet" href="./css/commons.css" />
+
+    <script src="./js/navbar.js"></script>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/> -->
     <link rel="stylesheet" href="./css/typed-text.css">
     <link rel="stylesheet" href="./css/timeline.css">
 
@@ -315,77 +317,9 @@
     
     <!-- End of he timeline -->
 
-
-
-
-    
-<script>
-//typedText
-// set up text to print, each item in array is new line
-// var aText = new Array(
-// "With the beggining of the military invention of NATO against Libya many workers and foreigners had to escape from Libya.",
-// "Because of the new situation for most of the workers it was not safe anymore to stay.",
-// "There was a high risk that the army could force them to take guns and to get involved in the fight.",
-// "The only option that time seemed to go back to the homeland, but it was difficult to move out from Libya. ",
-// "Another option was taking the risk to cross the sea.",
-// "Most of us have arrived at Italy via Lampedusa Island. But in Italy conditions were bad and there was no chance to find a job. That is why most of us decided to move from Italy to another European countries."
-// );
-// var iSpeed = 100; // time delay of print out
-// var iIndex = 0; // start printing array at this posision
-// var iArrLength = aText[0].length; // the length of the text array
-// var iScrollAt = 20; // start scrolling up at this many lines
- 
-// var iTextPos = 0; // initialise text position
-// var sContents = ''; // initialise contents variable
-// var iRow; // initialise current row
- 
-// function typewriter()
-// {
-//  sContents =  ' ';
-//  iRow = Math.max(0, iIndex-iScrollAt);
-//  var destination = document.getElementById("typedtext");
- 
-//  while ( iRow < iIndex ) {
-//   sContents += aText[iRow++] + '<br />';
-//  }
-//  destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-//  if ( iTextPos++ == iArrLength ) {
-//   iTextPos = 0;
-//   iIndex++;
-//   if ( iIndex != aText.length ) {
-//    iArrLength = aText[iIndex].length;
-//    setTimeout("typewriter()", 500);
-//   }
-//  } else {
-//   setTimeout("typewriter()", iSpeed);
-//  }
-// }
-
-
-// typewriter();
-
-
-// navbar
-
-    toggle = document.querySelectorAll(".toggle")[0];
-nav = document.querySelectorAll("nav")[0];
-toggle_open_text = 'hey!';
-toggle_close_text = '<mg src="./img/revol-fist.png" width="112px" height="112px">';
-
-toggle.addEventListener('click', function() {
-	nav.classList.toggle('open');
-	
-  if (nav.classList.contains('open')) {
-    toggle.innerHTML = toggle_close_text;
-  } else {
-    toggle.innerHTML = toggle_open_text;
-  }
-}, false);
-
-setTimeout(function(){
-	nav.classList.toggle('open');	
-}, 800);
-</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadNavbar());
+    </script>
 
 </body>
 

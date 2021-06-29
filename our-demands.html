@@ -6,8 +6,11 @@
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <link rel="stylesheet" href="./css/retro-navbar.css" />
     <link rel="stylesheet" href="./css/styled-text.css" >
-    <!-- <link rel="stylesheet" href="./css/commons.css" > -->
+    <link rel="stylesheet" href="./css/commons.css" >
     <link rel="stylesheet" href="./css/demands.css" >
+
+    <script src="./js/navbar.js"></script>
+
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -15,7 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,47 +46,53 @@
         </a>
     </nav>
 
+  
 
 
-    <div class="styled-txt">
+    <div>
+
+    <div class="styled-txt" style="left: 0%;">
         <p>Our Demands</p>
+    </div>  
+
+        <ul class="rolldown-list" id="myList">
+            <li>Freedom of Movement and the right to stay in the country of our choice.
+                (For our group: Paragraph 23!)
+            </li>
+            <li>
+                Work permit and the right to education and training!
+            </li>
+            <li>
+                Access to accommodation, to the health system and other social services!
+            </li>
+            <li>
+                Abolution of the Dublin regulation: Validity of all European documents in all EU countries!
+            </li>
+        
+          </ul> 
+        
     </div>
 
-   
 
+ <script>
+         document.addEventListener("DOMContentLoaded", loadNavbar());
 
+    $('.rolldown-list li').each(function () {
+    var delay = ($(this).index() / 4) + 's';
+    $(this).css({
+        webkitAnimationDelay: delay,
+        mozAnimationDelay: delay,
+        animationDelay: delay
+    });
+    });
 
-    
+    $('#btnReload').click(function () {
+    $('#myList').removeClass('rolldown-list');
+    setTimeout(function () {
+        $('#myList').addClass('rolldown-list');
+    }, 1);
+    });
 
-<!-- <div class="footer">
-    <ul>
-      <li><a href="./multimedia.html">Multimedia</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-      <li><a href="./support-us.html">Donation</a></li>
-    </ul>  
-  </div>  
- -->
-
-
-<script>
-    toggle = document.querySelectorAll(".toggle")[0];
-nav = document.querySelectorAll("nav")[0];
-toggle_open_text = 'hey!';
-toggle_close_text = '<img src="./img/revol-fist.png" width="112px" height="112px">';
-
-toggle.addEventListener('click', function() {
-	nav.classList.toggle('open');
-	
-  if (nav.classList.contains('open')) {
-    toggle.innerHTML = toggle_close_text;
-  } else {
-    toggle.innerHTML = toggle_open_text;
-  }
-}, false);
-
-setTimeout(function(){
-	nav.classList.toggle('open');	
-}, 800);
 </script>
 
 </body>

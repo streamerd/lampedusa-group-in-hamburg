@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/tent.css" >
 
 
+    <script src="./js/navbar.js"></script>
 
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <link rel="stylesheet" href="./css/retro-navbar.css" />
@@ -88,99 +89,9 @@
       </div>
     
 
-<!--     
-    <div class="footer">
-        <ul>
-          <li><a href="./multimedia.html">Multimedia</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./support-us.html">Donation</a></li>
-        </ul>  
-      </div>   -->
-    
-    <!-- <div class="txt" id="typedtext"></div> -->
-
-    
-    <!-- <p>The saying “never over the top” is a lifestyle we at UTB live by. Keep everything unique, fresh, and catchy; never go over the top; never over do it nor water it down. We expect big things from ourselves in the near future and will settle for nothing less.</p> -->
-
-<!-- <div class="bubble bubble--highlight">
-<a href="./auction-stats.html">
-    show me the timeline
-</a>
-</div> -->
 
 <script>
-
-
-// typedText
-
-// var aText = new Array(
-// "With the beggining of the military invention of NATO against Libya many workers and foreigners had to escape from Libya.",
-// "Because of the new situation for most of the workers it was not safe anymore to stay.",
-// "There was a high risk that the army could force them to take guns and to get involved in the fight.",
-// "The only option that time seemed to go back to the homeland, but it was difficult to move out from Libya. ",
-// "Another option was taking the risk to cross the sea.",
-// "Most of us have arrived at Italy via Lampedusa Island. But in Italy conditions were bad and there was no chance to find a job. That is why most of us decided to move from Italy to another European countries."
-// );
-// var iSpeed = 100; // time delay of print out
-// var iIndex = 0; // start printing array at this posision
-// var iArrLength = aText[0].length; // the length of the text array
-// var iScrollAt = 20; // start scrolling up at this many lines
- 
-// var iTextPos = 0; // initialise text position
-// var sContents = ''; // initialise contents variable
-// var iRow; // initialise current row
- 
-// function typewriter()
-// {
-//  sContents =  ' ';
-//  iRow = Math.max(0, iIndex-iScrollAt);
-//  var destination = document.getElementById("typedtext");
- 
-//  while ( iRow < iIndex ) {
-//   sContents += aText[iRow++] + '<br />';
-//  }
-//  destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-//  if ( iTextPos++ == iArrLength ) {
-//   iTextPos = 0;
-//   iIndex++;
-//   if ( iIndex != aText.length ) {
-//    iArrLength = aText[iIndex].length;
-//    setTimeout("typewriter()", 500);
-//   }
-//  } else {
-//   setTimeout("typewriter()", iSpeed);
-//  }
-// }
-
-// typewriter();
-
-// end of typedText
-
-
-// navbar
-
-    toggle = document.querySelectorAll(".toggle")[0];
-nav = document.querySelectorAll("nav")[0];
-toggle_open_text = 'hallo!';
-toggle_close_text = '<img src="./img/revol-fist.png" width="112px" height="112px">';
-
-toggle.addEventListener('click', function() {
-	nav.classList.toggle('open');
-	
-  if (nav.classList.contains('open')) {
-    toggle.innerHTML = toggle_close_text;
-  } else {
-    toggle.innerHTML = toggle_open_text;
-  }
-}, false);
-
-setTimeout(function(){
-	nav.classList.toggle('open');	
-}, 800);
-
-// end of navbar
-
-
+document.addEventListener("DOMContentLoaded", loadNavbar());
 </script>
 
 </body>
