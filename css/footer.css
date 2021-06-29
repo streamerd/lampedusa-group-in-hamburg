@@ -1,0 +1,80 @@
+/* footer ---------------------------------------------------------------*/
+
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+
+
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+  } 
+
+a{
+	color: inherit;
+	text-decoration: none;
+	border-bottom:3px solid #22A7F0;
+	padding-bottom: 1px;
+	cursor: pointer;
+	
+}
+
+a:hover{
+	border-bottom:2px dotted #22A7F0;
+}
+
+footer{
+	clear: both;
+	height: 5px;
+	background-color: #b91010;
+	padding: 1%;
+  padding-left:0;
+  padding-right:0;
+	position: relative;
+  margin-top:200px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin:0 auto;
+}
+
+.text-footer{
+	margin: 1% auto;
+	width: 183px;
+	color: white;
+}
+
+	footer ul li a{
+		border: none;
+	}
+
+.social-ul{
+	margin: 0 auto;
+	width: 317px;
+	margin-top: -39px;
+}
+
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  line-height: 40px;
+  font-family: Entypo;
+  font-size: 20px;
+  text-align: center;
+  color: #555;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  transition: color .3s;
+}
+
+.social:hover {
+  color: #790ebbec;
+  /* color: #22A7F0; */
+
+  cursor: pointer;
+
+}
+
+/* end footer ---------------------------------------------------------------*/
