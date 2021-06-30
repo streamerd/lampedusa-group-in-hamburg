@@ -1,6 +1,6 @@
 ### content debt
 
-- footer
+- footer (done)
 - social links (initially to index and contact pages)
 - art, sports projects (as new pages)
 - interviews (prepare it for text and multimedia support)
