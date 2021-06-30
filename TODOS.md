@@ -9,6 +9,6 @@
 ### tech debt
 
 
-- responsiveness (size & layout, based on @media max-width)
+- responsiveness (size & layout, based on @media max-width) - (enhanced. ongoing for text size increase)
 - localization (make different pages per language to support: additionally German, French and Arabic)
 
