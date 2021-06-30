@@ -1,7 +1,7 @@
 function loadNavbar() {
     toggle = document.querySelectorAll(".toggle")[0];
     nav = document.querySelectorAll("nav")[0];
-    toggle_open_text = 'hallo!';
+    toggle_open_text = 'moin!';
     toggle_close_text = '<img src="./img/revol-fist.png" width="112px" height="112px">';
     
     toggle.addEventListener('click', function() {
